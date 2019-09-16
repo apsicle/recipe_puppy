@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recipe Hound Lite</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/925e22cfeb.js"></script>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="navbar">
+        <a href="./index.html" id="navbar-home" class="navbar-link">
+          <i class="fas fa-home"></i>
+        </a>
+        <div href="./favorites.html" id="navbar-about" class="navbar-link">About</div>
+        <div href="./favorites.html" id="navbar-favorites" class="navbar-link">
+          Your Saved Recipes
+        </div>
+      </div>
+      <div id="page-header">
+        <img id="page-header__image" src="./images/puppy.png">
+        <div id="page-header__text">
+          <h1>Welcome to Recipe Puppy</h1>
+          <p>Search for recipes by entering ingredients, comma separated.</p>
+          <p>+: Recipe must include</p>
+          <p>-: Recipe does not include</p>
+        </div>
+      </div>
+      <div id="router-view">
+      </div>
+      <!-- <form id="search-form">
+        <div id="search-icon-container">
+          <img id="search-icon" src="./search-icon.png">
+        </div>
+        <input id="search-input" placeholder="Ex: +eggs,-onions,flour,sugar" type="text" name="search-input">
+        <button type="submit">Search</button>
+      </form>
+      <div id="recipes-container">
+
+      </div> -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
+    <script src="index.js" async defer></script>
+    
+  </body>
+</html>

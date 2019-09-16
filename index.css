@@ -1,0 +1,127 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 4rem;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  transition: 0.2s linear;
+  height: 4rem;
+}
+
+.navbar-link:hover, .active-page {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  opacity: 0.8;
+}
+
+#page-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-header {
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vmax; 
+  /* background-color: green; */
+}
+
+#page-header__image {
+  width: 15vmax;
+  height: auto;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vmax;
+}
+
+#search-icon-container {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  width: auto;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  padding: 5px;
+}
+
+#search-icon {
+  height: 1.5rem;
+  width: auto;
+  margin: auto;
+}
+
+#search-input {
+  width: 30vw;
+  height: 3rem;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  padding: 5px;
+}
+
+#recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15vmax;
+  height: auto;
+  text-align: center;
+  padding: 1vmax;
+}
+
+.recipe a {
+  position: relative;
+  width: 15vmax;
+  height: auto;
+  max-height: 15vmax;
+}
+
+.recipe img {
+  display: block;
+  width: 15vmax;
+  height: auto;
+  max-height: 15vmax;
+  transition: 0.2s linear;
+}
+
+.recipe img:hover {
+  opacity:0.85;
+}
+
+.fav-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  color: red;
+}
+
+i::before{
+  background:transparent;
+}
