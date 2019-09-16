@@ -28,7 +28,8 @@ There are some basic mocks in `/mocks` -- showing the poor artistry of the rando
  - Favorites should persist between page views.
     + [X] Done, uses local storage.
  - Site should work on mobile devices.
-    + [X] Done
+    + [X] Working in chrome but not firefox on my android. Not exactly sure why and I can't seem to get
+    debugging working with my desktop-phone connection so I can't see the error. I'm unfortunately leaving it like this for now.
  - Should have a very small code footprint.
     + [X] Not sure what qualifies as very small to be honest. I started this project by just writing the necessary functionality into one controller class, but then I decided to take it as an exercise in design to try to componentize my code to keep things organized (mostly, though I left the nav bar and page header as normal html to save some time).
 
